@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <label for="text">Behavior:</label>
+            <textarea id="text" rows="5" cols="30" readonly></textarea>
+            <div id="checkboxes">
+                <input type="checkbox" id="checkbtn1" onchange="updateText()">
+                <label for="checkbtn1">Concentrated Study</label><br>
+                <input type="checkbox" id="checkbtn2" onchange="updateText()">
+                <label for="checkbtn2">Good Grade Study</label><br>
+                <input type="checkbox" id="checkbtn3" onchange="updateText()">
+                <label for="checkbtn3">Good Work Study</label><br>
+            </div>
+        </div>
+    </div>
+    <script src="./decorator.js"></script>
+</body>
+</html>
