@@ -27,13 +27,13 @@ class ConcentratedStudy extends StudyDecorator {
     }
 }
 
-class GoodGradeStudy extends ConcentratedStudy {
+class GoodGrade extends ConcentratedStudy {
     study() {
         return super.study() + " ได้เกรดดี";
     }
 }
 
-class GoodWorkStudy extends ConcentratedStudy {
+class GoodWork extends ConcentratedStudy {
     study() {
         return super.study() + " ได้ที่ทำงานดี";
     }
@@ -47,10 +47,10 @@ function updateText() {
         studyBehavior = new ConcentratedStudy(studyBehavior);
     }
     if (document.getElementById("checkbtn2").checked) {
-        studyBehavior = new GoodGradeStudy(studyBehavior);
+        studyBehavior = new GoodGrade(studyBehavior);
     }
     if (document.getElementById("checkbtn3").checked) {
-        studyBehavior = new GoodWorkStudy(studyBehavior);
+        studyBehavior = new GoodWork(studyBehavior);
     }
 
     textArea.value = studyBehavior.study();
